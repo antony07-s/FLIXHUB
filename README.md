@@ -30,6 +30,4 @@ npm run dev
 ```
 
 ## Live Demo
-
-Coming Soon
-```
+https://tmdb-movies-clone.netlify.app/)
