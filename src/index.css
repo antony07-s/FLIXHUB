@@ -1,0 +1,49 @@
+@import "tailwindcss";
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    #1a1a1a 25%,
+    #2a2a2a 50%,
+    #1a1a1a 75%
+  );
+  background-size: 1000px 100%;
+  animation: shimmer 2s infinite linear;
+}
+
+/* hide scrollbar but keep scroll working */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+:root {
+  --bg-primary: #000000;
+  --bg-secondary: #141414;
+  --bg-form: rgba(0, 0, 0, 0.85);
+  --text-primary: #ffffff;
+  --text-secondary: #b3b3b3;
+  --input-bg: #333333;
+  --input-text: #ffffff;
+}
+
+.light {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f3f3f3;
+  --bg-form: rgba(255, 255, 255, 0.90);
+  --text-primary: #000000;
+  --text-secondary: #555555;
+  --input-bg: #eeeeee;
+  --input-text: #000000;
+}
